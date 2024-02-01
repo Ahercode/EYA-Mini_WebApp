@@ -38,14 +38,14 @@ const MasterLayout: FC<WithChildren> = ({children}) => {
       </div>
 
       {/* begin:: Drawers */}
-      <ActivityDrawer />
-      <RightToolbar />
+      {/* <ActivityDrawer /> */}
+      {/* <RightToolbar /> */}
       <DrawerMessenger />
       {/* end:: Drawers */}
 
       {/* begin:: Modals */}
-      <InviteUsers />
-      <UpgradePlan />
+      {/* <InviteUsers /> */}
+      {/* <UpgradePlan /> */}
       {/* end:: Modals */}
       <ScrollTop />
     </PageDataProvider>

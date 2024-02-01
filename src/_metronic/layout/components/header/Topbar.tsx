@@ -23,20 +23,6 @@ const Topbar: FC = () => {
         <div className={clsx('d-flex align-items-stretch', toolbarButtonMarginClass)}>
           <Search />
         </div>
-        {/* Activities */}
-        <div className={clsx('d-flex align-items-center ', toolbarButtonMarginClass)}>
-          {/* begin::Drawer toggle */}
-          <div
-            className={clsx(
-              'btn btn-icon btn-active-light-primary btn-custom',
-              toolbarButtonHeightClass
-            )}
-            id='kt_activities_toggle'
-          >
-            <KTIcon iconName='chart-simple' className={toolbarButtonIconSizeClass} />
-          </div>
-          {/* end::Drawer toggle */}
-        </div>
 
         {/* NOTIFICATIONS */}
         <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
@@ -73,31 +59,6 @@ const Topbar: FC = () => {
           </div>
           {/* end::Menu wrapper */}
         </div>
-
-        {/* Quick links */}
-        <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-          {/* begin::Menu wrapper */}
-          <div
-            className={clsx(
-              'btn btn-icon btn-active-light-primary btn-custom',
-              toolbarButtonHeightClass
-            )}
-            data-kt-menu-trigger='click'
-            data-kt-menu-attach='parent'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='bottom'
-          >
-            <KTIcon iconName='element-11' className={toolbarButtonIconSizeClass} />
-          </div>
-          <QuickLinks />
-          {/* end::Menu wrapper */}
-        </div>
-
-        {/* begin::Theme mode */}
-        <div className={clsx('d-flex align-items-center', toolbarButtonMarginClass)}>
-          <ThemeModeSwitcher toggleBtnClass={toolbarButtonHeightClass} />
-        </div>
-        {/* end::Theme mode */}
 
         {/* begin::User */}
         <div

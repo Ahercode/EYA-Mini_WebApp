@@ -17,7 +17,7 @@ export function HeaderWrapper() {
       id='kt_header'
       className={clsx('header', classes.header.join(' '), 'align-items-stretch')}
       data-kt-sticky='true'
-      data-kt-sticky-name='header'
+      data-kt-sticky-name='header | lg:header-sticky'
       data-kt-sticky-offset="{default: '200px', lg: '300px'}"
       {...attributes.headerMenu}
     >
